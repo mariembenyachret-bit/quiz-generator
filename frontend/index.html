@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Quiz PDF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1> Générateur de Quiz</h1>
+        <p class="subtitle">Upload un PDF et génère un quiz automatiquement</p>
+
+        <div class="upload-box">
+            <input type="file" id="pdfFile" accept=".pdf">
+            <label for="pdfFile"> Choisir un fichier PDF</label>
+        </div>
+
+        <div class="options">
+            <label>Nombre de questions :</label>
+            <select id="numQuestions">
+                <option value="3">3</option>
+                <option value="5" selected>5</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+
+        <button id="generateBtn" onclick="generateQuiz()">
+             Générer le Quiz
+        </button>
+
+        <div id="loading" class="hidden">⏳ Génération en cours...</div>
+        <div id="error" class="hidden"></div>
+        <div id="quizContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

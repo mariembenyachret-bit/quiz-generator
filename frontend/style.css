@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #4a4a8a;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.upload-box {
+    border: 3px dashed #667eea;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.upload-box input[type="file"] {
+    display: none;
+}
+
+.upload-box label {
+    cursor: pointer;
+    color: #667eea;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+select {
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 2px solid #667eea;
+    color: #4a4a8a;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.hidden { display: none; }
+
+#loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #667eea;
+    margin: 20px 0;
+}
+
+#error {
+    background: #ffe0e0;
+    color: #c00;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.question-card {
+    background: #f8f9ff;
+    border-left: 5px solid #667eea;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.question-card h3 {
+    color: #4a4a8a;
+    margin-bottom: 15px;
+}
+
+.option {
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #e0e0f0;
+    transition: all 0.2s;
+}
+
+.option:hover { background: #eeeeff; }
+.option.correct { background: #d4edda; border-color: #28a745; color: #155724; }
+.option.wrong { background: #f8d7da; border-color: #dc3545; color: #721c24; }
